@@ -1,0 +1,16 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --corPrimaria: #141847
+    --corLetras: white
+    --corSecundaria: black
+}
+
+
+/* Header */
+.subMenuNavBaru{
+    list-style: none;
+}
+/* Header */
