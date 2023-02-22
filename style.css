@@ -2,15 +2,96 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --corPrimaria: #141847
-    --corLetras: white
-    --corSecundaria: black
+:root {
+	--corPrimaria: #646ee2;
+	--corTexto: white;
+	--corSecundaria: rgb(75, 75, 231);
 }
 
-
 /* Header */
-.subMenuNavBaru{
-    list-style: none;
+.subMenuNavBar {
+	list-style: none;
+	color: var(--corTexto);
+}
+
+.linksNavBar {
+	color: var(--corTexto);
+	font-weight: bold;
+	font-size: 80%;
+}
+.linksNavBar:hover {
+	color: var(--corSecundaria);
 }
 /* Header */
+
+/* containerExtensao */
+.containerExtensao {
+	text-align: center;
+	background-color: var(--corPrimaria);
+	color: var(--corTexto);
+}
+
+.containerExtensao h1 {
+	padding: 20px;
+}
+
+.containerExtensao p {
+	padding: 10px 20px;
+}
+
+.containerExtensao .container {
+	padding: 0px 0px 40px 0px !important;
+}
+
+/* containerExtensao */
+
+/* Button */
+
+.violetOutline {
+	color: var(--corPrimaria);
+	border-color: var(--corPrimaria);
+}
+
+.violetOutline:hover {
+	background-color: var(--corPrimaria);
+	color: var(--corTexto);
+}
+
+.violetOutline:focus {
+	box-shadow: 0 0 1em var(--corPrimaria);
+	border-color: var(--corPrimaria);
+}
+
+.violet {
+	color: var(--corTexto);
+	background-color: var(--corPrimaria);
+	transition: 0.2s;
+}
+
+.violet:hover {
+	background-color: var(--corPrimaria);
+	opacity: 0.9;
+	color: var(--corTexto);
+}
+/* Button */
+
+/* CardsIndex */
+.borderViolet {
+	border: 1px solid var(--corPrimaria);
+}
+
+.textViolet {
+	background-color: var(--corPrimaria);
+	color: var(--corTexto);
+}
+
+.containerCards {
+	margin-top: 10px;
+}
+.containerCards h2 {
+	margin: 20px;
+	color: var(--corPrimaria);
+	border-bottom: 1px solid var(--corPrimaria);
+}
+
+/* CardsIndex */
