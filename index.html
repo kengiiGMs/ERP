@@ -76,23 +76,26 @@
     <div class="container containerFormulario">
         <h2>Cadastre uma Nova Empresa</h2>
         <div class="container">
-            <form action="post">
+            <form method="post">
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control violetInput" placeholder="Código" min="0" required>
-                    <label for="floatingInput">Código</label>
+                    <input type="number" class="form-control violetInput" placeholder="Código" min="0" required
+                        id="codigo">
+                    <label for="codigo">Código</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control violetInput" placeholder="Razão Social" required>
-                    <label for="floatingPassword">Razão Social</label>
+                    <input type="text" class="form-control violetInput" placeholder="Razão Social" required
+                        id="razaoSocial">
+                    <label for="razaoSocial">Razão Social</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="date" class="form-control violetInput" placeholder="Data de Cadastro" required>
-                    <label for="floatingPassword">Data de Cadastro</label>
+                    <input type="date" class="form-control violetInput" placeholder="Data de Cadastro" required
+                        id="dataCadastro">
+                    <label for="dataCadastro">Data de Cadastro</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="number" class="form-control violetInput" placeholder="Valor de Limite de Crédito"
-                        required>
-                    <label for="floatingPassword">Valor de Limite de Crédito</label>
+                    <input type="text" class="form-control violetInput" placeholder="Valor de Limite de Crédito"
+                        required id="limiteCredito">
+                    <label for="limiteCredito">Valor de Limite de Crédito</label>
                 </div>
                 <div class="d-grid gap-2">
                     <input type="submit" class="form-control btn btn-outline-light" value="Cadastrar">

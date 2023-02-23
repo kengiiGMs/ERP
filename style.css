@@ -206,4 +206,14 @@ span p {
 }
 /* Cards */
 
+/* modals */
+.modal-title {
+	color: var(--corPrimaria);
+}
+.modal-title-sub {
+	color: var(--corPrimaria);
+	font-size: 140%;
+}
+/* modals */
+
 /* ||-- cadastro.HTML --|| */
