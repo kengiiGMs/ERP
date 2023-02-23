@@ -2,51 +2,17 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 :root {
 	--corPrimaria: #646ee2;
 	--corTexto: white;
-	--corSecundaria: rgb(75, 75, 231);
+	--corSecundaria: rgb(81, 81, 216);
 }
-
-/* Header */
-.subMenuNavBar {
-	list-style: none;
-	color: var(--corTexto);
-}
-
-.linksNavBar {
-	color: var(--corTexto);
-	font-weight: bold;
-	font-size: 80%;
-}
-.linksNavBar:hover {
-	color: var(--corSecundaria);
-}
-/* Header */
-
-/* containerExtensao */
-.containerExtensao {
-	text-align: center;
-	background-color: var(--corPrimaria);
-	color: var(--corTexto);
-}
-
-.containerExtensao h1 {
-	padding: 20px;
-}
-
-.containerExtensao p {
-	padding: 10px 20px;
-}
-
-.containerExtensao .container {
-	padding: 0px 0px 40px 0px !important;
-}
-
-/* containerExtensao */
 
 /* Button */
-
 .violetOutline {
 	color: var(--corPrimaria);
 	border-color: var(--corPrimaria);
@@ -75,6 +41,81 @@ body {
 }
 /* Button */
 
+/* Header */
+.subMenuNavBar {
+	list-style: none;
+	color: var(--corTexto);
+}
+
+.linksNavBar {
+	color: var(--corTexto);
+	font-weight: bold;
+	font-size: 80%;
+}
+.linksNavBar:hover {
+	color: var(--corSecundaria);
+}
+/* Header */
+
+/* footer */
+.containerFooter {
+	text-align: center;
+}
+
+.containerCenterFooter {
+	border: 2px var(--corPrimaria);
+	border-style: none solid none solid;
+}
+
+.containerFooter h2 {
+	color: var(--corPrimaria);
+}
+
+.contatosUL {
+	text-align: center;
+	list-style: none;
+	margin: auto;
+	padding: 0;
+}
+
+.contatosUL span svg,
+span p {
+	display: inline-block;
+}
+
+.containerRedesSociais {
+	display: inline-block;
+}
+.containerRedesSociais i {
+	font-size: 250%;
+	cursor: pointer;
+	margin: 20px;
+	color: var(--corPrimaria);
+}
+
+/* footer */
+
+/* ||-- index.HTML --|| */
+/* containerExtensao */
+.containerExtensao {
+	text-align: center;
+	background-color: var(--corPrimaria);
+	color: var(--corTexto);
+}
+
+.containerExtensao h1 {
+	padding: 20px;
+}
+
+.containerExtensao p {
+	padding: 10px 20px;
+}
+
+.containerExtensao .container {
+	padding: 0px 0px 40px 0px !important;
+}
+/* containerExtensao */
+
 /* CardsIndex */
 .borderViolet {
 	border: 1px solid var(--corPrimaria);
@@ -94,4 +135,75 @@ body {
 	border-bottom: 1px solid var(--corPrimaria);
 }
 
+.containerCards h4 {
+	font-size: 210%;
+}
 /* CardsIndex */
+
+/* formulario */
+.containerFormulario h2 {
+	color: var(--corTexto);
+	margin: 20px;
+	text-align: center;
+}
+.containerFormulario {
+	background-color: var(--corPrimaria);
+	border-radius: 20px;
+	padding: 20px;
+	margin-top: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.violetInput:focus {
+	box-shadow: 0 0 1em rgb(100, 70, 233);
+	border-color: var(--corSecundaria);
+}
+/* formulario */
+/* ||-- index.HTML --|| */
+
+/* ||-- cadastro.HTML --|| */
+/* table */
+.tabelaDosCadastros {
+	color: var(--corPrimaria);
+}
+.paginationViolet {
+	margin-left: 10px;
+}
+
+.pagination a {
+	color: var(--corPrimaria);
+}
+
+.pagination .active a {
+	background-color: var(--corPrimaria);
+	color: white;
+}
+
+.pagination a:focus {
+	box-shadow: 0 0 1em rgb(100, 70, 233);
+	border-color: var(--corSecundaria);
+}
+/* table */
+
+/* Cards */
+.colunaCard {
+	margin: 15px 0px 10px;
+}
+
+.colunaCard i {
+	font-size: 500%;
+	color: var(--corPrimaria);
+	text-align: center;
+}
+
+.card-title {
+	color: var(--corPrimaria);
+}
+
+.card-text-black {
+	color: black;
+}
+/* Cards */
+
+/* ||-- cadastro.HTML --|| */

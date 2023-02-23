@@ -4,18 +4,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ERP</title>
+    <link rel="icon" href="https://brascomm.b-cdn.net/wp-content/uploads/2016/04/favicon-1.png" type="image/x-icon">
+    <title>ERP | Home</title>
+    <meta name="author" content="Kaiki Kenji">
+    <meta name="description" content="Sistema ERP Básico">
+    <meta name="keywords" content="ERP, sistema empresarial, brascomm">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #646ee2;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="https://brasscom.org.br/wp-content/themes/brasscom/images/icons/logo.png" width="60">
+                    <img src="https://brascomm.b-cdn.net/wp-content/uploads/elementor/thumbs/brascomm-site1-pwg130f9t0zt6zyvoniagr0ow37gr2rh3vfn4s8i7u.png"
+                        width="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -61,7 +68,36 @@
             tempora veniam?</p>
         <div class="container">
             <button type="button" class="btn btn-outline-light" onclick="location.href='cadastro.html'">Ver todas as
-                Empresas Cadastradas</button>
+                Empresas Cadastradas
+            </button>
+        </div>
+    </div>
+
+    <div class="container containerFormulario">
+        <h2>Cadastre uma Nova Empresa</h2>
+        <div class="container">
+            <form action="post">
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control violetInput" placeholder="Código" min="0" required>
+                    <label for="floatingInput">Código</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control violetInput" placeholder="Razão Social" required>
+                    <label for="floatingPassword">Razão Social</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control violetInput" placeholder="Data de Cadastro" required>
+                    <label for="floatingPassword">Data de Cadastro</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control violetInput" placeholder="Valor de Limite de Crédito"
+                        required>
+                    <label for="floatingPassword">Valor de Limite de Crédito</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <input type="submit" class="form-control btn btn-outline-light" value="Cadastrar">
+                </div>
+            </form>
         </div>
     </div>
 
@@ -71,11 +107,11 @@
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm borderViolet">
                     <div class="card-header py-3 textViolet">
-                        <h4 class="my-0 fw-normal">Atual</h4>
+                        <h3 class="my-0 fw-normal">Atual</h3>
                     </div>
                     <div class="card-body">
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>10 contas de Usuario</li>
+                            <li>10 contas de Usuário</li>
                             <li>2 GB de armazenamento</li>
                             <li>Suporte via Email </li>
                             <li>Acesso ao Centro de Ajuda</li>
@@ -87,13 +123,14 @@
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Prata</h4>
+                        <h3 class="my-0 fw-normal">Prata</h3>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">R$: 199<small class="text-muted fw-light">/mês</small>
-                        </h1>
+                        <h4 class="card-title pricing-card-title">
+                            R$: 199<small class="text-muted fw-light">/mês</small>
+                        </h4>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 contas de Usuario</li>
+                            <li>20 contas de Usuário</li>
                             <li>10 GB de armazenamento</li>
                             <li>Prioridade no Suporte via Email </li>
                             <li>Acesso ao Centro de Ajuda</li>
@@ -105,13 +142,14 @@
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Ouro</h4>
+                        <h3 class="my-0 fw-normal">Ouro</h3>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">R$: 399<small class="text-muted fw-light">/mês</small>
-                        </h1>
+                        <h4 class="card-title pricing-card-title">
+                            R$: 399<small class="text-muted fw-light">/mês</small>
+                        </h4>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>30 contas de Usuario</li>
+                            <li>30 contas de Usuário</li>
                             <li>15 GB de armazenamento</li>
                             <li>Suporte via Email e Celular</li>
                             <li>Acesso ao Centro de Ajuda</li>
@@ -120,9 +158,57 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <footer>
+        <div class="container-fluid">
+            <hr>
+            <div class="container containerFooter">
+                <div class="row">
+                    <div class="col">
+                        <h2>Brasscom</h2>
+                        <p>Todos os Direitos Reservados © 2023</p>
+                    </div>
+                    <div class="col">
+                        <div class="containerCenterFooter">
+                            <h2>Contatos</h2>
+                            <div class="container">
+                                <ul class="contatosUL">
+                                    <li>
+                                        <span>
+                                            <i class="bi bi-telephone"></i>
+                                        </span>
+                                        <span>
+                                            <p>(11) 4901-8000</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="bi bi-envelope"></i>
+                                        </span>
+                                        <span>
+                                            <p style="display: inline-block;">contato@brascomm.net</p>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>Redes Sociais</h2>
+                        <div class="container containerRedesSociais">
+                            <i class="bi bi-youtube"
+                                onclick="location.href='https://www.youtube.com/user/Brascomm'"></i>
+                            <i class="bi bi-instagram"
+                                onclick="location.href='https://www.instagram.com/brascommerp/'"></i>
+                            <i class="bi bi-facebook" onclick="location.href='https://www.facebook.com/brascomm/'"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://brascomm.b-cdn.net/wp-content/uploads/2016/04/favicon-1.png" type="image/x-icon">
+    <title>ERP | Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #646ee2;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://brascomm.b-cdn.net/wp-content/uploads/elementor/thumbs/brascomm-site1-pwg130f9t0zt6zyvoniagr0ow37gr2rh3vfn4s8i7u.png"
+                        width="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link linksNavBar" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linksNavBar" href="cadastro.html">Cadastros</a>
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown subMenuNavBar">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="text-align: end;">
+                            <img src="https://avatars.githubusercontent.com/u/80048095?v=4"
+                                style="border-radius:50px;width: 40px; height: 40px;">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">Ver perfil</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Sair</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 colunaCard">
+                <div class="card">
+                    <i class="bi bi-bank"></i>
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">Empresas Cadastradas</h5>
+                        <p class="card-text">Total de Empresas Cadastradas: 250</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 colunaCard">
+                <div class="card">
+                    <i class="bi bi-cash-coin"></i>
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title">Limite de Crédito</h5>
+                        <p class="card-text">Média de Limite de Crédito: R$: 736.111.106</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 colunaCard">
+                <a href="">
+                    <div class="card">
+                        <i class="bi bi-clipboard-data"></i>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Exibir Relatórios</h5>
+                            <p class="card-text card-text-black">Consulte a Situação das Empresas</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <div class="m-2">
+                <table class="table tabelaDosCadastros">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome de Fantasia</th>
+                        <th scope="col">Data de Cadastro</th>
+                        <th scope="col">Valor Limite</th>
+                        <th scope="col">Ações</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Microsoft</td>
+                            <td>04/04/1975</td>
+                            <td>R$: 1.119.900.000</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline violetOutline" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-arrows-angle-expand"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <button type="button" class="btn btn-outline-danger">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <i class="bi bi-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info">
+                                                <i class="bi bi-file-earmark-bar-graph"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Sony</td>
+                            <td>07/05/1946</td>
+                            <td>R$: 891.203.200</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline violetOutline" type="button" id="dropdownMenuButton2"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-arrows-angle-expand"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li>
+                                            <button type="button" class="btn btn-outline-danger">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <i class="bi bi-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info">
+                                                <i class="bi bi-file-earmark-bar-graph"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Toei Animation</td>
+                            <td>23/01/1948</td>
+                            <td>R$: 197.230.120</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline violetOutline" type="button" id="dropdownMenuButton3"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-arrows-angle-expand"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                        <li>
+                                            <button type="button" class="btn btn-outline-danger">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-warning">
+                                                <i class="bi bi-pencil"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-outline-info">
+                                                <i class="bi bi-file-earmark-bar-graph"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Voltar</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Avançar</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <hr>
+            <div class="container containerFooter">
+                <div class="row">
+                    <div class="col">
+                        <h2>Brasscom</h2>
+                        <p>Todos os Direitos Reservados © 2023</p>
+                    </div>
+                    <div class="col">
+                        <div class="containerCenterFooter">
+                            <h2>Contatos</h2>
+                            <div class="container">
+                                <ul class="contatosUL">
+                                    <li>
+                                        <span>
+                                            <i class="bi bi-telephone"></i>
+                                        </span>
+                                        <span>
+                                            <p>(11) 4901-8000</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="bi bi-envelope"></i>
+                                        </span>
+                                        <span>
+                                            <p style="display: inline-block;">contato@brascomm.net</p>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h2>Redes Sociais</h2>
+                        <div class="container containerRedesSociais">
+                            <i class="bi bi-youtube"
+                                onclick="location.href='https://www.youtube.com/user/Brascomm'"></i>
+                            <i class="bi bi-instagram"
+                                onclick="location.href='https://www.instagram.com/brascommerp/'"></i>
+                            <i class="bi bi-facebook" onclick="location.href='https://www.facebook.com/brascomm/'"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
